@@ -2,8 +2,11 @@ var express = require("express"),
     app = express(),
     PORT = 5000 || process.env.PORT;
 
+app.set("view engine","ejs");
+app.use(express.static("assets"));
+
 app.get("/", function(req, res){
-       res.send("Website under construction...");
+       res.render("index.ejs");
 });
 
 app.listen(PORT, function(err){
