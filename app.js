@@ -17,7 +17,7 @@ app.get("/right", function(req, res){
     res.render("right-sidebar.ejs");
 });
 
-app.get("/no", function(req, res){
+app.get("/team", function(req, res){
     res.render("no-sidebar.ejs");
 });
 
