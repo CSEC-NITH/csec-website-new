@@ -10,15 +10,15 @@ app.get("/", function(req, res){
 });
 
 app.get("/about", function(req, res){
-    res.render("left-sidebar.ejs");
+    res.render("about.ejs");
 });
 
 app.get("/events", function(req, res){
-    res.render("right-sidebar.ejs");
+    res.render("events.ejs");
 });
 
 app.get("/team", function(req, res){
-    res.render("no-sidebar.ejs");
+    res.render("team.ejs");
 });
 
 app.get("/contact", function(req, res){
