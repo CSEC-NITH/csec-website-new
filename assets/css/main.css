@@ -3330,11 +3330,13 @@ img.profile{
 	position:absolute;
 	float:left;
 	display:block;
+	/* align:center; */
 	top:0;
 	bottom:0;
 	left:143px;
 	right:0;
-	width: 200px;	
+	/* margin:0 auto; */
+	width: 200px;
 	height: 200px;
 	border-radius:50%;
 	opacity:0;
@@ -3346,6 +3348,25 @@ img.profile{
 	opacity:0.5;
 }
 
+@media screen and (max-width:736px)
+{
+	.profOverlay
+	{
+		position:absolute;
+		float:left;
+		display:block;
+		top:0;
+		bottom:0;
+		left:34px;
+		right:0;
+		width: 200px;
+		height: 200px;
+		border-radius:50%;
+		opacity:0;
+		background: white;
+    }
+
+}
 
 #logo img
 {
