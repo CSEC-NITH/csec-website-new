@@ -2505,7 +2505,7 @@ input, select, textarea {
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
 		color: #fff;
-		cursor: default;
+		cursor: default;	
 		padding: 6em 0;
 		text-align: center;
 	}
@@ -3314,3 +3314,14 @@ input, select, textarea {
 {
 	width : 200px;
 }
+
+#logo img
+{
+	position:relative;
+	top:4px;
+    left:6px;
+}
+/* #banner-logo
+{
+	width:20%;
+} */
