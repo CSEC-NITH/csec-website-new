@@ -1998,7 +1998,7 @@ input, select, textarea {
 
 	ul.icons {
 		list-style: none;
-		padding-left: 0;
+		padding-left:0;
 		cursor: default;
 	}
 
@@ -2010,6 +2010,22 @@ input, select, textarea {
 
 			ul.icons li:first-child {
 				padding-left: 0;
+			}
+			div#centerDiv {
+				width: 100%;
+				text-align: center;
+				
+			}
+			ul.centerUL {
+				margin: 2px auto;
+				line-height: 1em;
+				padding-left: 0;
+				padding-top:2px;
+			}
+			.centerUL li {
+				display: inline;
+				text-align: center;
+				padding-top: 2px;
 			}
 
 /* Featured Icons */
