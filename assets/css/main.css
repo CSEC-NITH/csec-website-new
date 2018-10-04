@@ -3309,11 +3309,43 @@ input, select, textarea {
 
 	}
 
+.prof{
+	position:relative;
+	/* max-width:400px; */
+}
+
 
 .profile
 {
 	width : 200px;
+	height:200px;
+	/* margin:0 auto; */
+	/* align:center; */
+	/* display:block; */
+	/* position:relative; */
 }
+
+.profOverlay
+{
+	position:absolute;
+	float:left;
+	display:block;
+	top:0;
+	bottom:0;
+	left:143px;
+	right:0;
+	width: 200px;	
+	height: 200px;
+	border-radius:50%;
+	opacity:0;
+	background: red;
+}
+
+.prof:hover .profOverlay
+{
+	opacity:0.5;
+}
+
 
 #logo img
 {
@@ -3321,7 +3353,3 @@ input, select, textarea {
 	top:4px;
     left:6px;
 }
-/* #banner-logo
-{
-	width:20%;
-} */
