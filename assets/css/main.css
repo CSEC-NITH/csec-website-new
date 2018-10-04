@@ -2505,7 +2505,7 @@ input, select, textarea {
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
 		color: #fff;
-		cursor: default;
+		cursor: default;	
 		padding: 6em 0;
 		text-align: center;
 	}
@@ -3309,8 +3309,47 @@ input, select, textarea {
 
 	}
 
+.prof{
+	position:relative;
+}
+
 
 .profile
 {
 	width : 200px;
+	height: 200px;
+}
+
+.profile img{
+	border-radius:50%;
+    
+}
+
+.profOverlay
+{
+	position:absolute;
+	float:left;
+	display:block;
+	top:0;
+	bottom:0;
+	left:143px;
+	right:0;
+	width: 200px;	
+	height: 200px;
+	border-radius:50%;
+	opacity:0;
+	background: white;
+}
+
+.prof:hover .profOverlay
+{
+	opacity:0.5;
+}
+
+
+#logo img
+{
+	position:relative;
+	top:4px;
+    left:6px;
 }
