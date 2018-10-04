@@ -3311,18 +3311,18 @@ input, select, textarea {
 
 .prof{
 	position:relative;
-	/* max-width:400px; */
 }
 
 
 .profile
 {
 	width : 200px;
-	height:200px;
-	/* margin:0 auto; */
-	/* align:center; */
-	/* display:block; */
-	/* position:relative; */
+	height: 200px;
+}
+
+.profile img{
+	border-radius:50%;
+    
 }
 
 .profOverlay
@@ -3338,7 +3338,7 @@ input, select, textarea {
 	height: 200px;
 	border-radius:50%;
 	opacity:0;
-	background: red;
+	background: white;
 }
 
 .prof:hover .profOverlay
