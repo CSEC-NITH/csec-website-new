@@ -3313,16 +3313,16 @@ input, select, textarea {
 	position:relative;
 }
 
-
 .profile
 {
 	width : 200px;
 	height: 200px;
+    
 }
 
-.profile img{
-	border-radius:50%;
-    
+img.profile{
+	border-radius:50%;    
+
 }
 
 .profOverlay
@@ -3341,7 +3341,7 @@ input, select, textarea {
 	background: white;
 }
 
-.prof:hover .profOverlay
+.profOverlay:hover
 {
 	opacity:0.5;
 }
