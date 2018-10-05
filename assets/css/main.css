@@ -3353,13 +3353,25 @@ img.profile{
 	height: 200px;
 	border-radius:50%;
 	opacity:0;
-	background: white;
+	background: black;
 }
 
 .profOverlay:hover
 {
 	opacity:0.5;
 }
+
+.name
+{
+    margin-bottom:0;
+}
+
+.post
+{
+	/* position:relative; */
+	/* bottom:30px; */
+}
+
 
 #logo img
 {
