@@ -3328,6 +3328,7 @@ input, select, textarea {
 .card
 {
 	display:flex;
+	flex-wrap: nowrap;
 }
 
 .skills
@@ -3350,7 +3351,17 @@ input, select, textarea {
 	flex-grow:2;
 	margin-left:1em;
 	margin-right:1em;
+}
 
+.profpic>img{
+	/* width:20px; */
+	/* height:40px; */
+}
+
+.skills li>img
+{ 
+	width:3em;
+	/* width: 10px; */
 }
 	
 /* .prof{
