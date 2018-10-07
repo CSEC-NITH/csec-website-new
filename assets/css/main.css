@@ -3344,7 +3344,6 @@ div.col-3.skills,div.col-3.contributions,div.col-6.profpic
 
 .skills
 {
-	/* visibility: hidden; */
 	opacity:0;
 }
 
@@ -3396,12 +3395,6 @@ ul>li
 	}
 }
 
-/* 
-profpic:hover .skills,
-profpic:hover .skills ~ .skills
-{
-	opacity:1;
-} */
 .profpic:hover+.skills
 {
 	opacity:1;
@@ -3409,47 +3402,13 @@ profpic:hover .skills ~ .skills
 
 .profpic:hover~.contributions
 {
-	/* visibility: visible; */
 	opacity:1;
-}
-
-
-/* 
-.skills
-{
-   flex-grow:1;
-}
-
-.contributions
-{
-   font-size:1rem;
-	flex-grow:1;
-}
-
-.skills,.contributions>ul
-{
-	text-align:left;
 }
 
 .profpic
 {
-	flex-grow:2;
-	margin-left:1em;
-	margin-right:1em;
-} */
-
-/* .profpic>img{ */
-
-	/* width:100%; */
-	/* width:20px; */
-	/* height:40px; */
-/* } */
-
-/* .skills li>img */
-/* {  */
-	/* width:3em; */
-	/* width: 10px; */
-/* } */
+	overflow: hidden;
+}
 	
 /* .prof{
 	position:relative;
