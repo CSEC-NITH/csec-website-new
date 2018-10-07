@@ -3325,12 +3325,67 @@ input, select, textarea {
 
 	}
 
-.card
+
+div.col-3.skills,div.col-3.contributions,div.col-6.profpic
 {
-	display:flex;
-	flex-wrap: nowrap;
+	padding:30px 0 0 0 !important;
 }
 
+
+.skills>ul
+{
+	list-style:none;
+}
+
+ul>li>img{
+	max-width:3em;
+}
+
+ul>li
+{
+	text-align: left;
+	font-size:0.8em;
+}
+
+.profpic>img{
+	/* max-width:9em; */
+	/* width:100%; */
+	max-height:15em;
+
+}
+
+@media screen and (max-width: 736px)
+{
+
+	div.col-3.skills,div.col-3.contributions,div.col-6.profpic
+	{
+		padding:30px 0 0 0 !important;
+	}
+
+	.skills>ul>li>img{
+		max-width:2em;
+	}
+
+    .profpic>img{
+		width:7em;
+	}
+
+	.contributions>ul>li
+	{
+		text-align: left;
+		font-size:0.7em;
+		line-height:2em;
+	}
+}
+
+
+.card
+{
+	/* display:flex; */
+	/* flex-wrap: nowrap; */
+	/* justify-content: space-between; */
+}
+/* 
 .skills
 {
    flex-grow:1;
@@ -3338,6 +3393,7 @@ input, select, textarea {
 
 .contributions
 {
+   font-size:1rem;
 	flex-grow:1;
 }
 
@@ -3351,18 +3407,20 @@ input, select, textarea {
 	flex-grow:2;
 	margin-left:1em;
 	margin-right:1em;
-}
+} */
 
-.profpic>img{
+/* .profpic>img{ */
+
+	/* width:100%; */
 	/* width:20px; */
 	/* height:40px; */
-}
+/* } */
 
-.skills li>img
-{ 
-	width:3em;
+/* .skills li>img */
+/* {  */
+	/* width:3em; */
 	/* width: 10px; */
-}
+/* } */
 	
 /* .prof{
 	position:relative;
@@ -3399,12 +3457,23 @@ img.profile{
 {
 	opacity:0.5;
 }
+*/
+
+.text
+{
+	width:100%;
+	padding-top:0;
+}
 
 .name
 {
     margin-bottom:0;
-} */
+}
 
+.post
+{
+	text-align:center;
+}
 
 #logo img
 {
