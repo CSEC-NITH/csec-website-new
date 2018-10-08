@@ -3325,17 +3325,53 @@ input, select, textarea {
 
 	}
 
+
+/* Team section */
+
 .box
 {
 	display:flex;
 	flex-direction: row;
+    /* position:relative; */
 }
 .box :nth-child(1) { order: 2; }
 .box :nth-child(2) { order: 1; }
-.box :nth-child(3) { order: 3; }
+.box :nth-child(3) { order: 2; }
 .box :nth-child(4) { order: 4; }
+.box :nth-child(5) { order: 5; }
 
+.profpic
+{
+	overflow: hidden;
+	position:relative;
+	display:flex;
+	justify-content: center;
 
+}
+
+.profpic>div{
+	position:relative;
+	width:206px;
+	height:275px;
+	overflow:hidden;
+}
+
+.profpic>div>img{
+	width:206px;
+}
+
+.profOverlay
+{
+	margin:0;
+	padding:0;
+	position:absolute;
+	display:block;
+	top:0;
+	bottom:0;
+	width: 100%;
+	opacity:0;
+	background: black;
+}
 
 div.col-3.skills,div.col-3.contributions,div.col-6.profpic
 {
@@ -3367,8 +3403,17 @@ ul>li
 	font-size:0.8em;
 }
 
-.profpic>img{
-	max-height:15em;
+.text
+{
+	display:flex;
+	justify-content: center;
+	flex-direction: column-reverse;
+}
+.text>h3{
+	width:100%;
+}
+.text>p{
+    width:100%;
 }
 
 @media screen and (max-width: 736px)
@@ -3405,47 +3450,10 @@ ul>li
 	opacity:1;
 }
 
-.profpic
-{
-	overflow: hidden;
-}
-	
-/* .prof{
-	position:relative;
-	display:flex;
-	justify-content:center;
-}
-
-.profile
-{
-	width : 200px;
-	height: 200px;
-    
-}
-
-img.profile{
-	border-radius:50%;
-}
-
-.profOverlay
-{
-	position:absolute;
-	display:block;
-	text-align:inherit;
-	top:0;
-	bottom:0;
-	width: 200px;
-	height: 200px;
-	border-radius:50%;
-	opacity:0;
-	background: black;
-}
-
-.profOverlay:hover
+.profpic:hover .profOverlay
 {
 	opacity:0.5;
 }
-*/
 
 .text
 {
@@ -3477,5 +3485,8 @@ img.profile{
 
 @media screen and (max-width : 736px)
 {
-	visibility: visible;
+	.mobile
+	{
+     	visibility: visible;  
+	}
 }
