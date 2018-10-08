@@ -3409,7 +3409,8 @@ ul>li
 	width:100%;
 }
 .text>p{
-    width:100%;
+	width:100%;
+	text-align: center;
 }
 
 @media screen and (max-width: 736px)
@@ -3424,8 +3425,14 @@ ul>li
 		max-width:2em;
 	}
 
-    .profpic>img{
-		width:7em;
+    .profpic>div{
+		width:149px;
+		height:198px;
+	}
+
+	.profOverlay{
+		width:149px;
+		height:198px;
 	}
 
 	.contributions>ul>li
@@ -3469,7 +3476,7 @@ ul>li
 	transition: border-radius 1s, opacity .2s, transform 0.5s, -webkit-transform 0.5s;
 }
 
-.profpic:hover .profOverlay
+.profpic>div:hover .profOverlay
 {
 	border-radius: 0%;
 	-webkit-transform: scale(1);
