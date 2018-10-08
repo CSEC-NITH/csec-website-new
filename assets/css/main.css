@@ -3370,7 +3370,7 @@ input, select, textarea {
 	bottom:0;
 	width: 100%;
 	opacity:0;
-	background: black;
+	background: rgba(72, 27, 174, .7);
 }
 
 div.col-3.skills,div.col-3.contributions,div.col-6.profpic
@@ -3408,6 +3408,8 @@ ul>li
 	display:flex;
 	justify-content: center;
 	flex-direction: column-reverse;
+	width:100%;
+	padding-top:0;
 }
 .text>h3{
 	width:100%;
@@ -3452,13 +3454,7 @@ ul>li
 
 .profpic:hover .profOverlay
 {
-	opacity:0.5;
-}
-
-.text
-{
-	width:100%;
-	padding-top:0;
+	animation: over .4s ease-in 1 forwards;
 }
 
 .name
@@ -3466,9 +3462,27 @@ ul>li
     margin-bottom:0;
 }
 
-.post
+.profpic:hover img
 {
-	text-align:center;
+	animation: disp .4s ease-in 1 forwards;
+}
+
+@keyframes disp
+{
+	0%{
+
+	}
+	100%{
+		transform:scale(1.2) rotateX(-5deg);
+	}
+}
+
+@keyframes over
+{
+	100%
+	{
+		opacity:0.7;
+	}
 }
 
 #logo img
@@ -3477,6 +3491,9 @@ ul>li
 	top:4px;
     left:6px;
 }
+
+
+/* Home button display */
 
 .mobile
 {
