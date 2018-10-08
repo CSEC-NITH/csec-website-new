@@ -3360,18 +3360,7 @@ input, select, textarea {
 	width:206px;
 }
 
-.profOverlay
-{
-	margin:0;
-	padding:0;
-	position:absolute;
-	display:block;
-	top:0;
-	bottom:0;
-	width: 100%;
-	opacity:0;
-	background: rgba(72, 27, 174, .7);
-}
+
 
 div.col-3.skills,div.col-3.contributions,div.col-6.profpic
 {
@@ -3451,10 +3440,27 @@ ul>li
 {
 	opacity:1;
 }
+.profOverlay
+{
+	margin:0;
+	padding:0;
+	position:absolute;
+	display:block;
+	top:0;
+	bottom:0;
+	width: 100%;
+	background: rgba(72, 27, 174, .7);
+	opacity:0;
+	border-radius: 100%;
+	transform: scale(0);
+	transition: border-radius 1s, opacity .2s, transform 0.5s;
+}
 
 .profpic:hover .profOverlay
 {
-	animation: over .4s ease-in 1 forwards;
+	border-radius: 0%;
+	transform: scale(1);
+	opacity:0.7;
 }
 
 .name
@@ -3462,28 +3468,16 @@ ul>li
     margin-bottom:0;
 }
 
+.profpic>div>img{
+	transition:transform 1s;
+}
+
 .profpic:hover img
 {
-	animation: disp .4s ease-in 1 forwards;
+	transform:scale(1.2) rotateX(-5deg);
 }
 
-@keyframes disp
-{
-	0%{
 
-	}
-	100%{
-		transform:scale(1.2) rotateX(-5deg);
-	}
-}
-
-@keyframes over
-{
-	100%
-	{
-		opacity:0.7;
-	}
-}
 
 #logo img
 {
