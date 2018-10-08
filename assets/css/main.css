@@ -3469,3 +3469,13 @@ img.profile{
 	top:4px;
     left:6px;
 }
+
+.mobile
+{
+	visibility: hidden;
+}
+
+@media screen and (max-width : 736px)
+{
+	visibility: visible;
+}
