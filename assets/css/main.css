@@ -3370,11 +3370,15 @@ div.col-3.skills,div.col-3.contributions,div.col-6.profpic
 .skills
 {
 	opacity:0;
+	transform:translateX(90px);
+	transition: opacity 1s, transform 1s;
 }
 
 .contributions
 {
 	opacity:0;
+	transform:translateX(-50px);
+	transition: opacity 1s, transform 1s;
 }
 
 .skills>ul
@@ -3383,7 +3387,8 @@ div.col-3.skills,div.col-3.contributions,div.col-6.profpic
 }
 
 ul>li>img{
-	max-width:3em;
+	margin-left:20px;
+	max-width:4em;
 }
 
 ul>li
@@ -3434,11 +3439,13 @@ ul>li
 .profpic:hover+.skills
 {
 	opacity:1;
+	transform: translateX(0);
 }
 
 .profpic:hover~.contributions
 {
 	opacity:1;
+	transform: translateX(0);	
 }
 .profOverlay
 {
@@ -3452,14 +3459,22 @@ ul>li
 	background: rgba(72, 27, 174, .7);
 	opacity:0;
 	border-radius: 100%;
-	transform: scale(0);
+	-webkit-transform: scale(0);
+	    -ms-transform: scale(0);
+	        transform: scale(0);
+	-webkit-transition: border-radius 1s, opacity .2s, -webkit-transform 0.5s;
+	transition: border-radius 1s, opacity .2s, -webkit-transform 0.5s;
+	-o-transition: border-radius 1s, opacity .2s, transform 0.5s;
 	transition: border-radius 1s, opacity .2s, transform 0.5s;
+	transition: border-radius 1s, opacity .2s, transform 0.5s, -webkit-transform 0.5s;
 }
 
 .profpic:hover .profOverlay
 {
 	border-radius: 0%;
-	transform: scale(1);
+	-webkit-transform: scale(1);
+	    -ms-transform: scale(1);
+	        transform: scale(1);
 	opacity:0.7;
 }
 
