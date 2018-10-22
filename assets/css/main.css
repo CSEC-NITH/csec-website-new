@@ -3550,3 +3550,8 @@ ul>li
      	visibility: visible;  
 	}
 }
+
+#teamLogo img
+{
+	width:5em;
+}
