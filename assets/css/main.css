@@ -3551,14 +3551,6 @@ ul>li
 	}
 }
 
-.no-sidebar #page-wrapper #main
-{
-	/* background:blue; */
-	/* background-image: url("images/dark-tl.svg"), url("images/dark-tr.svg"), url("images/dark-bl.svg"), url("images/dark-br.svg"),url("images/csecback2.jpg"); */
-	/* background-image:url("images/pic02.jpg") */
-}
-
-
 #teamLogo img
 {
 	width:5em;
@@ -3567,4 +3559,18 @@ ul>li
 html
 {
 	scroll-behavior: smooth;
+}
+
+.centerUL
+{
+	position: relative;
+	margin:0 auto;
+	top:30px;
+}
+
+.Copyright li
+{
+	position: relative;
+	padding-left:0;
+	top:20px;
 }
