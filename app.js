@@ -21,6 +21,18 @@ app.get("/events/heuristics", function(req, res){
     res.render("heuristics.ejs");
 });
 
+app.get("/events/programming-meets", function(req, res){
+    res.render("programming-meets.ejs");
+});
+
+app.get("/events/hackathon", function(req, res){
+    res.render("hackathon.ejs");
+});
+
+app.get("/events/lean-in", function(req, res){
+    res.render("lean-in.ejs");
+});
+
 app.get("/team", function(req, res){
     res.render("team.ejs");
 });
