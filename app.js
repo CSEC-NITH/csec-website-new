@@ -17,6 +17,10 @@ app.get("/events", function(req, res){
     res.render("events.ejs");
 });
 
+app.get("/events/heuristics", function(req, res){
+    res.render("heuristics.ejs");
+});
+
 app.get("/team", function(req, res){
     res.render("team.ejs");
 });
